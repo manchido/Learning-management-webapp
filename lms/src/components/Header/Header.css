@@ -1,0 +1,27 @@
+/* Header.css */
+.header {
+    display: flex;
+    justify-content: flex-start; /* Aligns the logo to the far left */
+    align-items: center; /* Centers items vertically */
+    height: 100px; /* Fixed height of the header */
+    background-color: white; /* White background color */
+    border-bottom: 2px green solid;
+    padding: 0 20px; /* Add padding on the sides */
+    position: fixed; /* Fixed position */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .logo {
+    height: 100%; /* Full height of the header */
+    object-fit: contain; /* Keep aspect ratio without cropping */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .header {
+      justify-content: center; /* Center logo on smaller screens */
+    }
+  }

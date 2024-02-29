@@ -1,0 +1,21 @@
+.test-list {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .test-list h2 {
+    margin-bottom: 20px;
+  }
+  
+  .test-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .test-list li {
+    margin-bottom: 10px;
+  }
+  
