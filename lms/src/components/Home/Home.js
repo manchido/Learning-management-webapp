@@ -5,6 +5,7 @@ import LandingPage from './LandingPage';
 import LoginForm from '../Authentication/LoginForm';
 import RegistrationForm from '../Authentication/RegistrationForm';
 import Calendar from '../Calendar/Calendar'
+import EventItem from '../Calendar/EventItem'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         < LoginForm />
         < RegistrationForm />
         < Calendar />
+        < EventItem />
       </Router>
     </div>
   );

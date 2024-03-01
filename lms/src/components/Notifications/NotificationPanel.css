@@ -1,21 +1,42 @@
 .notification-panel {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notification-panel h2 {
+  font-size: 1.5rem;
+}
+
+.notification-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notification-panel li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.notification-panel button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .notification-panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
   }
-  
-  .notification-panel h2 {
-    margin-bottom: 20px;
-  }
-  
-  .notification-panel ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
+
   .notification-panel li {
-    margin-bottom: 10px;
+    width: calc(33.33% - 20px); /* Adjust based on the number of columns you want */
+    margin-right: 10px; /* Add spacing between items */
+    text-align: center;
   }
-  
+}
