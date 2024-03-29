@@ -1,8 +1,11 @@
-// Navbar.js
 import React from 'react';
 import './Navbar.css'; // Import the CSS file for styling
 
 const Navbar = () => {
+  const handleLogout = () => {
+    // Implement logout functionality
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -17,7 +20,7 @@ const Navbar = () => {
           <div className="dropdown-content">
             <a href="#">Profile</a>
             <a href="#">Settings</a>
-            <a href="#">Logout</a>
+            <button onClick={handleLogout}>Logout</button>
           </div>
         </li>
       </ul>
