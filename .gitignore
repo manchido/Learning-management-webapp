@@ -1,9 +1,4 @@
-*.tfstate
-*.tfstate.*
-*.tfstate.backup
-terraform.tfstate.d/
-node_modules/
-terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/*
-# Exclude large Terraform provider binaries
-terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/*/linux_amd64/terraform-provider-aws_*
-
+node_modules
+/rest/.env
+.terraform
+terraform/
